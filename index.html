@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --spacing: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--spacing);
+            text-align: center;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: var(--spacing);
+            margin: 2rem auto;
+            max-width: 1200px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: var(--spacing);
+            margin-top: 2rem;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .experience-item {
+            background: #f4f8fb;
+            border-radius: 6px;
+            padding: 1rem;
+            box-shadow: 0 1px 2px rgba(44,62,80,0.05);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            section {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#summary">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Senzo Mnisi</h1>
+        <h2>Corporate Investment Banking Professional</h2>
+        <div class="social-links">
+            <a href="mailto:senzosuccess@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/senzo-mnisi-9b6755179" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+27791175918"><i class="fas fa-phone"></i></a>
+        </div>
+        <p>📍 Johannesburg, Gauteng</p>
+    </header>
+
+    <section id="summary">
+        <h3><i class="fas fa-user-tie"></i> Professional Summary</h3>
+        <p></p>I hold a Bachelor of Commerce in Finance from the University of Johannesburg and recently completed a Postgraduate Diploma in Finance, Banking, and Investment Management at the University of KwaZulu-Natal, graduating with an overall average of 70%. I am deeply passionate about investment management and corporate finance, with a strong ambition to build a career in investment banking, private equity, and portfolio management. To strengthen my technical skills, I have developed a keen interest in coding, particularly learning Python for financial modeling, data analysis, and automation. I am committed to continuous professional development and plan to pursue the CFA designation to deepen my expertise. I am excited to leverage my skills, academic knowledge, and drive within a dynamic, growth-oriented organization</p>
+    </section>
+
+    <section id="education">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="education-item">
+            <h4>Postgraduate Diploma in Finance, Banking & Investment Management</h4>
+            <p>University of KwaZulu-Natal | 2024 – 2024</p>
+        </div>
+        <div class="education-item">
+            <h4>Bachelor of Commerce in Finance</h4>
+            <p>University of Johannesburg | 2020 - 2022</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <h4>Portfolio Administrator / Financial Advisory Training</h4>
+                <p>Rosebank Wealth Group | 2023 - 2025</p>
+            </div>
+            <div class="experience-item">
+                <h4>Private Suite Advisor</h4>
+                <p>First National Bank | 2025 - Present</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h3><i class="fas fa-tools"></i> Skills & Expertise</h3>
+        <div class="skills-grid">
+            <div>
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li><i class="fas fa-chart-line"></i> Financial Modeling (DCF, LBO)</li>
+                    <li><i class="fas fa-calculator"></i> Portfolio Analysis</li>
+                    <li><i class="fas fa-file-excel"></i> Advanced MS Excel</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Core Competencies</h4>
+                <ul>
+                    <li><i class="fas fa-handshake"></i> Investment Management</li>
+                    <li><i class="fas fa-chart-pie"></i> Corporate Finance</li>
+                    <li><i class="fas fa-users"></i> Client Relations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3><i class="fas fa-envelope"></i> Get in Touch</h3>
+        <div class="contact-details" style="text-align:center; margin-bottom:1rem;">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:senzosuccess@gmail.com" style="color:var(--primary-color);text-decoration:underline;">senzosuccess@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+27791175918" style="color:var(--primary-color);text-decoration:underline;">+27 79 117 5918</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/senzo-mnisi-9b6755179" target="_blank" style="color:var(--primary-color);text-decoration:underline;">LinkedIn Profile</a></p>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formResponse" style="display:none; color: var(--secondary-color); margin-top: 1rem; text-align:center;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Full Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/senzo-mnisi-9b6755179"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SenzoMnisi"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/yourprofile"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Contact form interactivity
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const mailtoLink = `mailto:senzosuccess@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=From: ${encodeURIComponent(name)} (%20${encodeURIComponent(email)})%0D%0A%0D%0A${encodeURIComponent(message)}`;
+            window.location.href = mailtoLink;
+            document.getElementById('formResponse').style.display = 'block';
+            document.getElementById('formResponse').textContent = 'Thank you for reaching out! Your email client should open shortly.';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
